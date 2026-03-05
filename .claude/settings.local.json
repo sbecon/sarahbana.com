@@ -1,0 +1,13 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(find \"/Users/bana/Dropbox \\(Personal\\)/website/\" -maxdepth 3 -iname \"*.jpg\" -o -iname \"*.jpeg\" 2>/dev/null)",
+      "Bash(cd \"/Users/bana/Dropbox \\(Personal\\)/website\" && hugo 2>&1)",
+      "Bash(hugo config 2>/dev/null | grep -i \"goldmark\" | head -20)",
+      "Bash(hugo config 2>/dev/null | grep -A2 \"renderer\")",
+      "Bash(cat \"/Users/bana/Dropbox \\(Personal\\)/website/public/cv/index.html\" 2>/dev/null)",
+      "Bash(cat \"/Users/bana/Dropbox \\(Personal\\)/website/public/cv/index.html\")",
+      "Bash(cat \"/Users/bana/Dropbox \\(Personal\\)/website/public/index.html\")"
+    ]
+  }
+}

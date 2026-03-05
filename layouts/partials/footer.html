@@ -1,0 +1,13 @@
+<footer class="site-footer">
+  <div class="footer-container">
+    <p>&copy; {{ now.Year }} Sarah H. Bana</p>
+  </div>
+</footer>
+<script>
+document.querySelector('.nav-toggle').addEventListener('click', function() {
+  const menu = document.querySelector('.nav-menu');
+  const expanded = this.getAttribute('aria-expanded') === 'true';
+  this.setAttribute('aria-expanded', !expanded);
+  menu.classList.toggle('open');
+});
+</script>

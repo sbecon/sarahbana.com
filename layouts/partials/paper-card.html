@@ -1,0 +1,22 @@
+<div class="paper-card">
+  <h3 class="paper-title">
+    {{ with .Params.pdf }}<a href="{{ . }}">{{ $.Title }}</a>{{ else }}{{ .Title }}{{ end }}
+  </h3>
+  <p class="paper-authors">{{ delimit .Params.authors ", " }}</p>
+  <p class="paper-venue">
+    <em>{{ .Params.venue }}</em>{{ with .Params.year }}, {{ . }}{{ end }}
+  </p>
+  {{ with .Params.abstract }}
+  <details class="paper-abstract">
+    <summary>Abstract</summary>
+    <p>{{ . }}</p>
+  </details>
+  {{ end }}
+  {{ with .Params.links }}
+  <div class="paper-links">
+    {{ range . }}
+    <a href="{{ .url }}" class="paper-link-pill" target="_blank" rel="noopener">{{ .label }}</a>
+    {{ end }}
+  </div>
+  {{ end }}
+</div>

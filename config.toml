@@ -1,0 +1,51 @@
+baseURL = "https://www.sarahbana.com/"
+languageCode = "en-us"
+title = "Sarah H. Bana"
+paginate = 10
+enableRobotsTXT = true
+ignoreLogs = ['warning-goldmark-raw-html']
+
+[params]
+  description = "Sarah H. Bana — Assistant Professor of Management Science at Chapman University"
+  author = "Sarah H. Bana"
+  email = "sarah.bana@gmail.com"
+  googleScholar = "https://scholar.google.com/citations?user=Ac7-JAQAAAAJ&hl=en&oi=ao"
+  github = "https://github.com/sbecon"
+  twitter = "https://x.com/sarah_bana"
+  linkedin = "https://www.linkedin.com/in/dr-sarah-bana"
+
+[menu]
+  [[menu.main]]
+    name = "About"
+    url = "/"
+    weight = 1
+  [[menu.main]]
+    name = "Research"
+    url = "/research/"
+    weight = 2
+  [[menu.main]]
+    name = "CV"
+    url = "/cv/"
+    weight = 3
+  [[menu.main]]
+    name = "Blog"
+    url = "/blog/"
+    weight = 4
+  [[menu.main]]
+    name = "Contact"
+    url = "/contact/"
+    weight = 5
+
+[markup]
+  [markup.goldmark]
+    [markup.goldmark.renderer]
+      unsafe = true
+
+[outputs]
+  home = ["HTML", "RSS"]
+  section = ["HTML", "RSS"]
+
+[outputFormats]
+  [outputFormats.RSS]
+    mediatype = "application/rss+xml"
+    baseName = "feed"

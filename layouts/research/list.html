@@ -1,0 +1,23 @@
+{{ define "main" }}
+<section class="research-page">
+  <h1>Research</h1>
+
+  {{ $papers := .RegularPages }}
+  {{ $published := where $papers ".Params.status" "published" }}
+  {{ $working := where $papers ".Params.status" "working" }}
+
+  {{ if $published }}
+  <h2>Publications</h2>
+  {{ range $published.ByParam "sort_weight" }}
+    {{ partial "paper-card.html" . }}
+  {{ end }}
+  {{ end }}
+
+  {{ if $working }}
+  <h2>Working Papers</h2>
+  {{ range $working.ByParam "sort_weight" }}
+    {{ partial "paper-card.html" . }}
+  {{ end }}
+  {{ end }}
+</section>
+{{ end }}

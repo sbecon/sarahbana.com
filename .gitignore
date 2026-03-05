@@ -1,0 +1,10 @@
+public/
+resources/
+.hugo_build.lock
+.DS_Store
+
+# Ignore loose PDFs in root (the originals you dropped in)
+/*.pdf
+
+# But track PDFs in static/ (these get served on the site)
+!static/
