@@ -12,6 +12,7 @@
     <p>{{ . }}</p>
   </details>
   {{ end }}
+  {{ with .Content }}<div class="paper-note">{{ . }}</div>{{ end }}
   {{ with .Params.links }}
   <div class="paper-links">
     {{ range . }}

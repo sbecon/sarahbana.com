@@ -292,6 +292,12 @@ a:hover { color: var(--light-blue); }
   border-radius: 4px;
 }
 
+.paper-note {
+  font-size: 0.88rem;
+  color: var(--text-secondary);
+  margin-top: 0.35rem;
+}
+
 .paper-links {
   display: flex;
   gap: 0.5rem;

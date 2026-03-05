@@ -111,6 +111,26 @@ Edit `content/_index.md` and push.
 
 ---
 
+## Updating Upcoming Travels
+
+The "Upcoming Travels" section is at the bottom of `content/_index.md`. It looks like this:
+
+```markdown
+- **Event Name** — Dates, City, State
+```
+
+To add an event, add a new line. To remove a past event, delete the line. Example:
+
+```markdown
+- **AI Challenges Education** — March 10–12, Palm Springs, CA
+- **Guest Lecture on AI and the Future of Work** — March 23, Northeastern University, Boston, MA
+- **BizAI Conference** — March 27–29, UT Dallas, Dallas, TX
+```
+
+Keep the format consistent: **Bold event name** — dates, location.
+
+---
+
 ## Updating Contact Info or Social Links
 
 Edit `config.toml` for the social icon links (email, Google Scholar, GitHub, X, LinkedIn). Edit `content/contact.md` for the contact page text.
