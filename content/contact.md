@@ -12,7 +12,7 @@ layout: "single"
 **Profiles:**
 - [Google Scholar](https://scholar.google.com/citations?user=K2mLuEsAAAAJ)
 - [GitHub](https://github.com/sbecon)
-- [X / Twitter](https://x.com/sarah_bana)
+- [X / Twitter](https://x.com/sarahhbana)
 - [LinkedIn](https://www.linkedin.com/in/dr-sarah-bana)
 
 </div>
