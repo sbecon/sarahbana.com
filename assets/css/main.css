@@ -182,6 +182,47 @@ a:hover { color: var(--light-blue); }
 .bio { font-size: 1rem; }
 .bio p { margin-bottom: 1rem; }
 
+/* Upcoming travels */
+.upcoming-section {
+  margin-top: 2rem;
+  padding: 1.25rem 1.5rem;
+  background: var(--extra-light-blue);
+  border-radius: 6px;
+}
+
+.upcoming-section h3 {
+  margin-top: 0;
+  margin-bottom: 0.15rem;
+  font-size: 1.15rem;
+}
+
+.upcoming-subtitle {
+  font-size: 0.85rem;
+  color: var(--text-secondary);
+  margin-bottom: 0.75rem;
+  font-style: italic;
+}
+
+.upcoming-section ul {
+  list-style: none;
+  padding-left: 0;
+  margin-bottom: 0;
+}
+
+.upcoming-section li {
+  padding: 0.3rem 0 0.3rem 1.25rem;
+  position: relative;
+  font-size: 0.92rem;
+}
+
+.upcoming-section li::before {
+  content: "\2022";
+  color: var(--digital-blue);
+  font-size: 1.1rem;
+  position: absolute;
+  left: 0;
+}
+
 /* Recent papers on homepage */
 .recent-papers { margin-top: 2.5rem; }
 
