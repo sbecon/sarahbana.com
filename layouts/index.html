@@ -39,7 +39,7 @@
     <h2>Recent Papers</h2>
     {{ range $recentPapers }}
     <div class="recent-paper-item">
-      {{ with .Params.pdf }}<a href="{{ . }}">{{ $.Title }}</a>{{ else }}<span>{{ .Title }}</span>{{ end }}
+      {{ $title := .Title }}{{ with .Params.pdf }}<a href="{{ . }}">{{ $title }}</a>{{ else }}<span>{{ $title }}</span>{{ end }}
       <span class="paper-meta">{{ delimit .Params.authors ", " }} ({{ .Params.year }}) &middot; {{ .Params.venue }}</span>
     </div>
     {{ end }}
