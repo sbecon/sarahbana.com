@@ -8,11 +8,9 @@ My research focuses on how AI and digitization reshape the skills and activities
 
 <div class="upcoming-section">
 
-### Upcoming Travels
-<p class="upcoming-subtitle">Let's hang out!</p>
+### Exciting News
+<p class="upcoming-subtitle">Finalist in the 2026 Tools Competition</p>
 
-- **AI Challenges Education** — March 10–12, Palm Springs, CA
-- **Guest Lecture on AI and the Future of Work** — March 23, Northeastern University, Boston, MA
-- **BizAI Conference** — March 27–29, UT Dallas, Dallas, TX
+**[Syllabus2Skills Navigator](https://tools-competition.org/26-postsecondary-finalists/)** — a tool that maps course syllabi to workforce tasks, helping students and institutions connect learning to careers. Selected as one of 16 finalists in the Building Pathways to Postsecondary Success track, organized by The Learning Agency.
 
 </div>
