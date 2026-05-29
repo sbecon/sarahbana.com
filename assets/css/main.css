@@ -203,6 +203,13 @@ a:hover { color: var(--light-blue); }
   font-style: italic;
 }
 
+.featured-links {
+  margin-top: 0.6rem;
+  margin-bottom: 0;
+  font-size: 0.85rem;
+  color: var(--text-secondary);
+}
+
 .upcoming-section ul {
   list-style: none;
   padding-left: 0;

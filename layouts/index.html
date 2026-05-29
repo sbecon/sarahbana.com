@@ -32,6 +32,21 @@
     {{ .Content }}
   </div>
 
+  {{ with .Params.featured }}
+  <div class="upcoming-section">
+    {{ with .heading }}<h3>{{ . }}</h3>{{ end }}
+    {{ with .subtitle }}<p class="upcoming-subtitle">{{ . }}</p>{{ end }}
+    <p>
+      {{ with .title }}<strong>{{ if $.Params.featured.titleUrl }}<a href="{{ $.Params.featured.titleUrl }}">{{ . }}</a>{{ else }}{{ . }}{{ end }}</strong>{{ if $.Params.featured.body }} — {{ end }}{{ end }}{{ with .body }}{{ . }}{{ end }}
+    </p>
+    {{ with .links }}
+    <p class="featured-links">
+      {{ range $i, $l := . }}{{ if $i }} · {{ end }}<a href="{{ $l.url }}" target="_blank" rel="noopener">{{ $l.text }}</a>{{ end }}
+    </p>
+    {{ end }}
+  </div>
+  {{ end }}
+
   {{ $recentPapers := where (where .Site.RegularPages "Section" "research") ".Params.status" "!=" "" }}
   {{ $recentPapers = $recentPapers | first 3 }}
   {{ if $recentPapers }}
