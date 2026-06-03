@@ -1,0 +1,12 @@
+# Homepage news item. The blue box shows whichever file here has the
+# latest `date`. Older files remain as the archive. To add news, copy
+# this file, rename it, and edit the fields. Fields: date, subtitle,
+# title, url, body, and an optional `links` list of {text, url} pills.
+date: 2026-06-02
+subtitle: "Featured in The Atlantic"
+title: "AI Has Ruined the Job Market"
+url: "https://www.theatlantic.com/ideas/2026/06/ai-job-market-hiring/687403/"
+body: "Annie Lowrey's feature on the AI-driven job market draws on our research on algorithmic hiring."
+links:
+  - text: "Read via archive"
+    url: "https://archive.ph/w0pCm"

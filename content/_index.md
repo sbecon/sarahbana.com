@@ -3,16 +3,11 @@ title: "Sarah H. Bana"
 
 # ─────────────────────────────────────────────────────────────
 # HOMEPAGE NEWS BOX  (the blue box under the bio)
-# To update: just edit the fields below. To hide the box,
-# delete this whole "featured:" block (or comment it out with #).
-# Links appear as "·"-separated pills at the end of the box.
+# News items now live in  data/news/*.yaml  — one file per item.
+# The box shows the item with the latest `date`; older files are
+# kept there as the archive. To add news, drop a new .yaml in that
+# folder. To hide the box, empty the folder.
 # ─────────────────────────────────────────────────────────────
-featured:
-  heading: "In the News"
-  subtitle: "Featured on Marketplace"
-  title: "Algorithmic Monocultures in Hiring"
-  titleUrl: "https://www.marketplace.org/story/2026/05/28/ai-hiring-tools-can-still-have-racial-biases-study-finds"
-  body: "Our work on bias in algorithmic hiring was featured on Marketplace."
 ---
 
 I am an Assistant Professor of Management Science at Chapman University's Argyros College of Business and Economics and a Digital Fellow at the Stanford Digital Economy Lab.

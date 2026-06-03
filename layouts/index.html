@@ -32,14 +32,21 @@
     {{ .Content }}
   </div>
 
-  {{ with .Params.featured }}
+  {{/* HOMEPAGE NEWS BOX — renders the latest item from data/news/*.yaml.
+       All files in that folder are the archive; the newest `date` shows here.
+       Add news by dropping a new .yaml in data/news/. No box if the folder is empty. */}}
+  {{ $news := slice }}
+  {{ range $k, $v := .Site.Data.news }}{{ $news = $news | append $v }}{{ end }}
+  {{ $news = sort $news "date" "desc" }}
+  {{ range first 1 $news }}
+  {{ $item := . }}
   <div class="upcoming-section">
-    {{ with .heading }}<h3>{{ . }}</h3>{{ end }}
-    {{ with .subtitle }}<p class="upcoming-subtitle">{{ . }}</p>{{ end }}
+    <h3>In the News</h3>
+    {{ with $item.subtitle }}<p class="upcoming-subtitle">{{ . }}</p>{{ end }}
     <p>
-      {{ with .title }}<strong>{{ if $.Params.featured.titleUrl }}<a href="{{ $.Params.featured.titleUrl }}">{{ . }}</a>{{ else }}{{ . }}{{ end }}</strong>{{ if $.Params.featured.body }} — {{ end }}{{ end }}{{ with .body }}{{ . }}{{ end }}
+      {{ with $item.title }}<strong>{{ if $item.url }}<a href="{{ $item.url }}">{{ . }}</a>{{ else }}{{ . }}{{ end }}</strong>{{ if $item.body }} — {{ end }}{{ end }}{{ with $item.body }}{{ . }}{{ end }}
     </p>
-    {{ with .links }}
+    {{ with $item.links }}
     <p class="featured-links">
       {{ range $i, $l := . }}{{ if $i }} · {{ end }}<a href="{{ $l.url }}" target="_blank" rel="noopener">{{ $l.text }}</a>{{ end }}
     </p>
