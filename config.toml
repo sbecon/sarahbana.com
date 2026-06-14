@@ -8,6 +8,11 @@ ignoreLogs = ['warning-goldmark-raw-html']
 [params]
   description = "Sarah H. Bana — Assistant Professor of Management Science at Chapman University"
   author = "Sarah H. Bana"
+  jobTitle = "Assistant Professor of Management Science"
+  employer = "Chapman University"
+  employerUrl = "https://www.chapman.edu/"
+  affiliation = "Stanford Digital Economy Lab"
+  affiliationUrl = "https://digitaleconomy.stanford.edu/"
   email = "sarah.bana@gmail.com"
   googleScholar = "https://scholar.google.com/citations?user=Ac7-JAQAAAAJ&hl=en&oi=ao"
   github = "https://github.com/sbecon"

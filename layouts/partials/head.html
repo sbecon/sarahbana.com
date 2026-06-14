@@ -15,3 +15,52 @@
 <link rel="stylesheet" href="{{ $css.Permalink }}">
 <link rel="icon" type="image/svg+xml" href="/favicon.svg">
 <link rel="alternate" type="application/rss+xml" title="{{ .Site.Title }}" href="{{ "feed.xml" | absURL }}">
+
+{{/* SCHEMA MARKUP (JSON-LD structured data) — helps search engines and AI models
+     identify who Sarah is and what she's published. Built from config params /
+     research front matter, so it stays in sync automatically. */}}
+{{ if .IsHome }}
+{{ $sameAs := slice }}
+{{ with .Site.Params.googleScholar }}{{ $sameAs = $sameAs | append . }}{{ end }}
+{{ with .Site.Params.linkedin }}{{ $sameAs = $sameAs | append . }}{{ end }}
+{{ with .Site.Params.twitter }}{{ $sameAs = $sameAs | append . }}{{ end }}
+{{ with .Site.Params.github }}{{ $sameAs = $sameAs | append . }}{{ end }}
+{{ $person := dict
+  "@context" "https://schema.org"
+  "@type" "Person"
+  "name" .Site.Params.author
+  "url" .Site.BaseURL
+  "jobTitle" .Site.Params.jobTitle
+  "image" (absURL "/img/headshot.jpg")
+  "email" (printf "mailto:%s" .Site.Params.email)
+  "worksFor" (dict "@type" "Organization" "name" .Site.Params.employer "url" .Site.Params.employerUrl)
+  "affiliation" (dict "@type" "Organization" "name" .Site.Params.affiliation "url" .Site.Params.affiliationUrl)
+  "sameAs" $sameAs
+}}
+<script type="application/ld+json">
+{{ $person | jsonify (dict "indent" "  ") | safeJS }}
+</script>
+{{ end }}
+
+{{ if and (eq .Section "research") .Params.authors }}
+{{ $authors := slice }}
+{{ range .Params.authors }}{{ $authors = $authors | append (dict "@type" "Person" "name" .) }}{{ end }}
+{{ $sa := slice }}
+{{ with .Params.pdf }}{{ $sa = $sa | append (absURL .) }}{{ end }}
+{{ with .Params.links }}{{ range . }}{{ $sa = $sa | append .url }}{{ end }}{{ end }}
+{{ $article := dict
+  "@context" "https://schema.org"
+  "@type" "ScholarlyArticle"
+  "headline" .Title
+  "name" .Title
+  "author" $authors
+  "datePublished" (printf "%v" .Params.year)
+  "url" .Permalink
+  "mainEntityOfPage" .Permalink
+}}
+{{ with .Params.abstract }}{{ $article = merge $article (dict "abstract" (. | plainify | chomp)) }}{{ end }}
+{{ if $sa }}{{ $article = merge $article (dict "sameAs" $sa) }}{{ end }}
+<script type="application/ld+json">
+{{ $article | jsonify (dict "indent" "  ") | safeJS }}
+</script>
+{{ end }}
