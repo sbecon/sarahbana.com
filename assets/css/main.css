@@ -230,6 +230,11 @@ a:hover { color: var(--light-blue); }
   left: 0;
 }
 
+.event-detail {
+  color: var(--text-secondary);
+  font-size: 0.85rem;
+}
+
 /* Recent papers on homepage */
 .recent-papers { margin-top: 2.5rem; }
 

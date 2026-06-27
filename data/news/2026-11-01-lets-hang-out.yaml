@@ -1,0 +1,16 @@
+# Homepage "Let's Hang Out!" box — upcoming talks & conferences.
+# Future-dated so it stays pinned as the featured item through the events.
+# Uses the optional `header` field and an `events` list of {name, detail, url}.
+date: 2026-11-01
+header: "Let's Hang Out!"
+subtitle: "Come say hi at these upcoming conferences:"
+events:
+  - name: "NBER Digital Economics and Artificial Intelligence"
+    detail: "Summer Institute · July 22–24, 2026"
+    url: "https://www.nber.org/conferences/si-2026-digital-economics-and-artificial-intelligence"
+  - name: "LSE Global Forum on AI and the Social Sciences 2026: AI and Labour Markets"
+    detail: "September 16–17"
+    url: "https://www.lse.ac.uk/dsi/news/2026/global-forum-announced"
+  - name: "Conference on Information Systems and Technology (CIST) 2026"
+    detail: "San Francisco · October 31 – November 1"
+    url: "https://cist2026.github.io"

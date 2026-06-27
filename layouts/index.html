@@ -42,11 +42,20 @@
   {{ range first 1 $news }}
   {{ $item := . }}
   <div class="upcoming-section">
-    <h3>In the News</h3>
+    <h3>{{ $item.header | default "In the News" }}</h3>
     {{ with $item.subtitle }}<p class="upcoming-subtitle">{{ . }}</p>{{ end }}
+    {{ if or $item.title $item.body }}
     <p>
       {{ with $item.title }}<strong>{{ if $item.url }}<a href="{{ $item.url }}">{{ . }}</a>{{ else }}{{ . }}{{ end }}</strong>{{ if $item.body }} — {{ end }}{{ end }}{{ with $item.body }}{{ . }}{{ end }}
     </p>
+    {{ end }}
+    {{ with $item.events }}
+    <ul>
+      {{ range . }}
+      <li>{{ if .url }}<a href="{{ .url }}" target="_blank" rel="noopener">{{ .name }}</a>{{ else }}{{ .name }}{{ end }}{{ with .detail }} <span class="event-detail">— {{ . }}</span>{{ end }}</li>
+      {{ end }}
+    </ul>
+    {{ end }}
     {{ with $item.links }}
     <p class="featured-links">
       {{ range $i, $l := . }}{{ if $i }} · {{ end }}<a href="{{ $l.url }}" target="_blank" rel="noopener">{{ $l.text }}</a>{{ end }}
