@@ -429,6 +429,52 @@ a:hover { color: var(--light-blue); }
 .single-page p { margin-bottom: 1rem; }
 .single-page ul, .single-page ol { margin-bottom: 1rem; padding-left: 1.5rem; }
 
+/* === Bio page === */
+.bio-intro {
+  font-size: 0.95rem;
+  color: var(--text-secondary);
+  margin-bottom: 1.75rem;
+}
+
+.bio-block {
+  position: relative;
+  border: 1px solid #e8e8e8;
+  border-radius: 6px;
+  padding: 1.25rem 1.25rem 1.1rem;
+  margin-bottom: 1.25rem;
+  background: #fff;
+}
+
+.bio-copy {
+  position: absolute;
+  top: 0.85rem;
+  right: 0.85rem;
+  cursor: pointer;
+  border: 1px solid var(--digital-blue);
+  background: #fff;
+  color: var(--digital-blue);
+  font: inherit;
+  font-size: 0.8rem;
+  font-weight: 600;
+  padding: 0.3rem 0.85rem;
+  border-radius: 4px;
+  transition: background 0.15s, color 0.15s;
+}
+.bio-copy:hover {
+  background: var(--digital-blue);
+  color: #fff;
+}
+.bio-copy.copied {
+  background: var(--digital-blue);
+  color: #fff;
+  border-color: var(--digital-blue);
+}
+
+.bio-text p {
+  margin: 0;
+  line-height: 1.65;
+}
+
 /* === Mobile === */
 @media (max-width: 640px) {
   html { font-size: 16px; }
