@@ -5,7 +5,7 @@ tags: ["AI", "work", "productivity", "Claude Code"]
 summary: "One of my favorite reads this year argues AI doesn't reduce work — it intensifies it. This weekend I lived it."
 ---
 
-One of my favorite reads this year has been Aruna Ranganathan and her student Xingqi "Maggie" Ye's article in *Harvard Business Review*, [**"AI Doesn't Reduce Work — It Intensifies It."**](https://hbr.org/2026/02/ai-doesnt-reduce-work-it-intensifies-it) In case you're paywalled, Berkeley Haas has a great [write-up](https://newsroom.haas.berkeley.edu/ai-promised-to-free-up-workers-time-uc-berkeley-haas-researchers-found-the-opposite/).
+One of my favorite reads this year has been [Aruna Ranganathan](https://www.arunaranganathan.com) and her student Xingqi "Maggie" Ye's article in *Harvard Business Review*, [**"AI Doesn't Reduce Work — It Intensifies It."**](https://hbr.org/2026/02/ai-doesnt-reduce-work-it-intensifies-it) In case you're paywalled, Berkeley Haas has a great [write-up](https://newsroom.haas.berkeley.edu/ai-promised-to-free-up-workers-time-uc-berkeley-haas-researchers-found-the-opposite/).
 
 ![AI Intensifies Work](/img/blog/ai-intensifies-work.png)
 
