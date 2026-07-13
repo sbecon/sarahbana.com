@@ -1,6 +1,6 @@
 ---
 title: "Fighting Fire with Fire: Infusing AI into Peer Review to Sustain Quality Scholarship"
-authors: ["Sarah H. Bana", "Hemant K. Bhargava", "Zhe Zhang", "Pantelis Loupos", "Laura Brandimarte", "Vidyanand Choudhary", "J. Frank Li", "Daniel Zantedeschi"]
+authors: ["Hemant K. Bhargava", "Sarah H. Bana", "Zhe Zhang", "Pantelis Loupos", "Laura Brandimarte", "Vidyanand Choudhary", "J. Frank Li", "Daniel Zantedeschi"]
 venue: "Under review at Management Science"
 status: "working"
 year: 2025
