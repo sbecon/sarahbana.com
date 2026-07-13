@@ -94,14 +94,19 @@ Push to GitHub and it auto-deploys.
 
 ## Updating Your CV
 
-Replace the PDF at `static/cv/bana_cv.pdf` with the new version, then push:
+This is now automatic. Compile a new CV in `~/Dropbox (Personal)/Professional Docs/CV2019/`
+(the newest `SBANA_CV_*.pdf` wins) and a daily launchd job (`com.sarahbana.cv-publish`, 6pm)
+copies it to `static/cv/bana_cv.pdf`, commits, and pushes.
+
+To publish immediately instead of waiting for the daily run:
 
 ```bash
-cp ~/path/to/new-cv.pdf static/cv/bana_cv.pdf
-git add static/cv/bana_cv.pdf
-git commit -m "Update CV"
-git push
+cd ~/Dropbox\ \(Personal\)/Professional\ Docs/CV2019
+./publish_cv.sh            # sync newest compiled PDF to the site
+./publish_cv.sh --build    # recompile newest .tex first, then sync
 ```
+
+Logs are at `~/Library/Logs/cv-publish.log`.
 
 ---
 
