@@ -1,7 +1,7 @@
 ---
 title: "AI-Exposed Jobs Deteriorated Before ChatGPT"
 authors: ["Morgan R. Frank", "Alireza Javadian Sabet", "Lisa Simon", "Sarah H. Bana", "Renzhe Yu"]
-venue: "Under review at Science"
+venue: "Working Paper"
 status: "working"
 year: 2025
 abstract: |
