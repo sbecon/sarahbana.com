@@ -1,5 +1,6 @@
 ---
 title: "work2vec: Using Language Models to Understand Wage Premia"
+aliases: ["/s/SBANA_JMP.pdf"]
 authors: ["Sarah H. Bana"]
 venue: "Working Paper"
 status: "working"

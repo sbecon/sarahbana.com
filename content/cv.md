@@ -1,6 +1,7 @@
 ---
 title: "CV"
 layout: "single"
+aliases: ["/pagecv", "/teaching"]
 ---
 
 <a href="/cv/bana_cv.pdf" class="cv-download" download>
