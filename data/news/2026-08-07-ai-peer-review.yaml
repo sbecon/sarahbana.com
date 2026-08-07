@@ -1,0 +1,12 @@
+date: 2026-08-07
+subtitle: "New in Management Science"
+title: "Fighting Fire with Fire: Infusing AI into Peer Review"
+url: "https://pubsonline.informs.org/doi/full/10.1287/mnsc.2026.00184"
+body: "We propose deploying LLMs as a structured first-line reviewer, with authors responding before human review — decreasing turnaround times and improving decision accuracy. We'll be testing the process at WORTH 2027."
+links:
+  - text: "Management Science"
+    url: "https://pubsonline.informs.org/doi/full/10.1287/mnsc.2026.00184"
+  - text: "Blog post"
+    url: "/blog/ai-peer-review/"
+  - text: "WORTH 2027"
+    url: "https://eller.arizona.edu/departments-research/centers-labs/management-information/events"
