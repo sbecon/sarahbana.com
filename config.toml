@@ -6,11 +6,11 @@ enableRobotsTXT = true
 ignoreLogs = ['warning-goldmark-raw-html']
 
 [params]
-  description = "Sarah H. Bana — Assistant Professor of Management Science at Chapman University"
+  description = "Sarah H. Bana — Assistant Professor in the Department of Management at LSE"
   author = "Sarah H. Bana"
-  jobTitle = "Assistant Professor of Management Science"
-  employer = "Chapman University"
-  employerUrl = "https://www.chapman.edu/"
+  jobTitle = "Assistant Professor, Department of Management — Information Systems and Innovation"
+  employer = "London School of Economics and Political Science"
+  employerUrl = "https://www.lse.ac.uk/management"
   affiliation = "Stanford Digital Economy Lab"
   affiliationUrl = "https://digitaleconomy.stanford.edu/"
   email = "sarah.bana@gmail.com"

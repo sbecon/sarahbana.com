@@ -10,6 +10,6 @@ title: "Sarah H. Bana"
 # ─────────────────────────────────────────────────────────────
 ---
 
-I am an Assistant Professor of Management Science at Chapman University's Argyros College of Business and Economics and a Digital Fellow at the Stanford Digital Economy Lab.
+I am an Assistant Professor in the Department of Management (Information Systems and Innovation) at the London School of Economics and Political Science and a Digital Fellow at the Stanford Digital Economy Lab.
 
 My research focuses on how AI and digitization reshape the skills and activities of workers and firms. I study algorithmic hiring systems, AI-generated job recommendations, and generative AI's impact on labor markets.

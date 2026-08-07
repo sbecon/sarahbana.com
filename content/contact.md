@@ -5,9 +5,11 @@ layout: "single"
 
 <div class="contact-info">
 
-**Email:** [sarah.bana@gmail.com](mailto:sarah.bana@gmail.com)
+**Email:** [sarah.bana@gmail.com](mailto:sarah.bana@gmail.com) — the best way to reach me
 
-**Office:** Argyros College of Business and Economics, Chapman University, Orange, CA
+**LSE email:** [S.Bana@lse.ac.uk](mailto:S.Bana@lse.ac.uk)
+
+**Office:** Marshall Building 4.30, Department of Management, London School of Economics and Political Science, Houghton Street, London WC2A 2AE
 
 **Profiles:**
 - [Google Scholar](https://scholar.google.com/citations?user=K2mLuEsAAAAJ)
