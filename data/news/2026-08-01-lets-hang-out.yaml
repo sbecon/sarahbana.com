@@ -1,7 +1,8 @@
 # Homepage "Let's Hang Out!" box — upcoming talks & conferences.
-# Future-dated so it stays pinned as the featured item through the events.
+# Un-pinned 2026-08-07 so the Fighting Fire paper announcement shows instead;
+# to re-pin, set `date` later than every other file here (it was 2026-11-01).
 # Uses the optional `header` field and an `events` list of {name, detail, url}.
-date: 2026-11-01
+date: 2026-08-01
 header: "Let's Hang Out!"
 subtitle: "Come say hi at these upcoming conferences:"
 events:
