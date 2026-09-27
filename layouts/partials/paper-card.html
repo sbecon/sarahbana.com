@@ -1,6 +1,6 @@
 <div class="paper-card">
   <h3 class="paper-title">
-    {{ with .Params.pdf }}<a href="{{ . }}">{{ $.Title }}</a>{{ else }}{{ .Title }}{{ end }}
+    {{ $href := .Params.pdf }}{{ if not $href }}{{ with index .Params.links 0 }}{{ $href = .url }}{{ end }}{{ end }}{{ with $href }}<a href="{{ . }}">{{ $.Title }}</a>{{ else }}{{ .Title }}{{ end }}
   </h3>
   <p class="paper-authors">{{ delimit .Params.authors ", " }}</p>
   <p class="paper-venue">
