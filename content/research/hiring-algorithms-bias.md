@@ -16,5 +16,6 @@ links:
     url: "https://hai.stanford.edu/news/ai-hiring-tools-can-yield-racial-bias-and-systemic-rejection"
   - label: "Marketplace"
     url: "https://www.marketplace.org/story/2026/05/28/ai-hiring-tools-can-still-have-racial-biases-study-finds"
+featured: 3
 sort_weight: 3
 ---

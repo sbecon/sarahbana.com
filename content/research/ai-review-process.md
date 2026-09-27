@@ -11,5 +11,6 @@ links:
     url: "https://pubsonline.informs.org/doi/10.1287/mnsc.2026.00184"
   - label: "Podcast: This IS Research"
     url: "https://www.janrecker.com/this-is-research-podcast/welcome-ai-reviewer-two-23-september-2026/"
+featured: 1
 sort_weight: 4
 ---

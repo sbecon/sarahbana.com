@@ -63,7 +63,11 @@
   </div>
   {{ end }}
 
-  {{ $recentPapers := where (where .Site.RegularPages "Section" "research") ".Params.status" "!=" "" }}
+  {{/* RECENT PAPERS — shows papers with a `featured: N` front-matter field, ordered by N
+       (lower first). Falls back to the first three research pages if none are featured. */}}
+  {{ $research := where (where .Site.RegularPages "Section" "research") ".Params.status" "!=" "" }}
+  {{ $recentPapers := where $research ".Params.featured" "!=" nil }}
+  {{ if $recentPapers }}{{ $recentPapers = $recentPapers.ByParam "featured" }}{{ else }}{{ $recentPapers = $research }}{{ end }}
   {{ $recentPapers = $recentPapers | first 3 }}
   {{ if $recentPapers }}
   <section class="recent-papers">
