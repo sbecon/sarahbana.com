@@ -12,5 +12,5 @@ links:
   - label: "SSRN"
     url: "https://papers.ssrn.com/sol3/papers.cfm?abstract_id=5437196"
 aliases: ["/research/ai-enabled-job-markets/", "/papers/working/ai-enabled-job-markets.pdf"]
-sort_weight: 2
+sort_weight: 1
 ---

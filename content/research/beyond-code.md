@@ -10,5 +10,5 @@ pdf: "/papers/working/beyond-code-llm-software-dev.pdf"
 links:
   - label: "New York Times"
     url: "https://www.nytimes.com/2025/07/07/business/ai-job-cuts.html?unlocked_article_code=1.Uk8.1ZrA.dJASBCtLvtau&smid=url-share"
-sort_weight: 1
+sort_weight: 3
 ---
