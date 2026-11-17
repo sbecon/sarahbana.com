@@ -4,7 +4,7 @@ layout: "single"
 description: "Biography of Sarah H. Bana for talks, panels, and press."
 ---
 
-<p class="bio-intro">A ready-to-use biography for talks, panels, introductions, and press. Also available: a <a href="/img/headshot.jpg" download>high-resolution headshot</a>.</p>
+<p class="bio-intro">A ready-to-use biography for talks, panels, introductions, and press. Also available: a <a href="/img/headshot-highres.jpg" download>high-resolution headshot</a>.</p>
 
 <div class="bio-block">
   <button class="bio-copy" data-target="bio-full" type="button">Copy</button>
