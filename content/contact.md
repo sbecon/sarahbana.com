@@ -11,6 +11,8 @@ layout: "single"
 
 **Office:** Marshall Building 4.30, Department of Management, London School of Economics and Political Science, Houghton Street, London WC2A 2AE
 
+**Office hours:** LSE students can book office hours with me through the [Student Hub](https://info.lse.ac.uk/current-students/student-hub).
+
 **Profiles:**
 - [Google Scholar](https://scholar.google.com/citations?user=K2mLuEsAAAAJ)
 - [GitHub](https://github.com/sbecon)
